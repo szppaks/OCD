@@ -22,5 +22,5 @@ import numpy as np
 pcd=o3d.io.read_point_cloud('samplepointcloud.pcd',format='pcd')
 ppoints=np.asarray(pcd.points)
 occ=ocdfilter.obfilter(ppoints,0.5,9,12)
-filteredpcd=o3d.geometry.PointCloud(o3d.utility.Vector3dVector(occ))    
+filteredpcd=o3d.geometry.PointCloud(o3d.utility.Vector3dVector(occ))   
 o3d.io.write_point_cloud('filteredpcd.pcd', filteredpcd)
