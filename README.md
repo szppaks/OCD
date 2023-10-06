@@ -1,19 +1,19 @@
 # OCD
 OCD very fast point cloud outlier filter
+<br />
+Octree based "radius-outlier-like" point cloud filter<br />
+Based on  'Fast Radius Outlier Filter Variant for Large Point Clouds by Péter Szutor and Marianna Zichar'<br />
+https://www.mdpi.com/2306-5729/8/10/149<br />
 
-Octree based "radius-outlier-like" point cloud filter
-Based on  'Fast Radius Outlier Filter Variant for Large Point Clouds by Péter Szutor and Marianna Zichar'
-https://www.mdpi.com/2306-5729/8/10/149
 
-
-How to use:
-Transfer the points to a numpy block.
+How to use:<br />
+Transfer the points to a numpy block.<br />
 The numpy array should be passed to the filter, which will return the points that are not outliers. (Caution: it does not keep the original order)
 
-How to install
-Use the following modules, these must be piped in first:
-numpy
-numba
+How to install<br />
+Use the following modules, these must be piped in first:<br />
+numpy<br />
+numba<br />
 
 An example of how to use it:<br /><i>
 import ocdfilter<br />
