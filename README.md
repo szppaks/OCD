@@ -15,12 +15,12 @@ Use the following modules, these must be piped in first:
 numpy
 numba
 
-An example of how to use it:
-import ocdfilter
-import open3d as o3d
-import numpy as np
-pcd=o3d.io.read_point_cloud('samplepointcloud.pcd',format='pcd')
-ppoints=np.asarray(pcd.points)
-occ=ocdfilter.obfilter(ppoints,0.5,9,12)
-filteredpcd=o3d.geometry.PointCloud(o3d.utility.Vector3dVector(occ))   
-o3d.io.write_point_cloud('filteredpcd.pcd', filteredpcd)
+An example of how to use it:<br><i>
+import ocdfilter<br>
+import open3d as o3d<br>
+import numpy as np<br>
+pcd=o3d.io.read_point_cloud('samplepointcloud.pcd',format='pcd')<br>
+ppoints=np.asarray(pcd.points)<br>
+occ=ocdfilter.obfilter(ppoints,0.5,9,12)<br>
+filteredpcd=o3d.geometry.PointCloud(o3d.utility.Vector3dVector(occ))   <br>
+o3d.io.write_point_cloud('filteredpcd.pcd', filteredpcd)<br>
