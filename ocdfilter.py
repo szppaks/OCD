@@ -29,8 +29,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 import numpy as np
-import os
-import open3d as o3d
 import math
 from numba import jit, njit
 
